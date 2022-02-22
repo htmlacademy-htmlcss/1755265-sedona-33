@@ -33,7 +33,7 @@ body {
 
 .navigation {
  background: #FFFFFF;
- box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation-link {
@@ -132,8 +132,6 @@ body {
  color: #000000;
 }
 
-
-
 .tips-description {
  font-style: normal;
  font-weight: normal;
@@ -200,12 +198,12 @@ body {
 
 .mailing-form {
  background: #F2F2F2;
- border-radius: 0px 10px 10px 0px;
+ border-radius: 0 10px 10px 0;
 }
 
 .mailing-button {
  background: #83B3D3;
- border-radius: 0px 10px 10px 0px;
+ border-radius: 0 10px 10px 0;
  display: flex;
  align-items: center;
  text-align: center;
@@ -335,6 +333,22 @@ body {
  color: #000000;
 }
 
+.hotel-card-button-right {
+ width: 140.94px;
+ left: 159.06px;
+ top: 0;
+ background: #83B3D3;
+ border-radius: 4px;
+}
+
+.hotel-card-button-right-selected {
+ width: 140.94px;
+ left: 159.06px;
+ top: 0;
+ background: #7DB54F;
+ border-radius: 4px;
+}
+
 .search-button-catalog {
  background: #83B3D3;
  border-radius: 4px;
@@ -358,8 +372,6 @@ body {
  border-radius: 4px;
  text-decoration: none;
  color:white;
- border-radius: 4px;
- border-radius: 4px;
  font-style: normal;
  font-weight: bold;
  font-size: 20px;
@@ -370,7 +382,6 @@ body {
 }
 
 .pagination-current {
- border-radius: 4px;
  background: #F2F2F2;
  border-radius: 4px;
  font-style: normal;
@@ -381,10 +392,6 @@ body {
  text-align: center;
  text-transform: uppercase;
  color: #000000;
-}
-
-.mailing-catalog {
- height: 241px;
 }
 
 .mailing-title-catalog {
@@ -406,6 +413,4 @@ body {
  color: #333333;
 }
 
-.sorting-filter {
- height: 48px;
-}
+
