@@ -70,8 +70,7 @@
           <button class="button-reset" type="reset">Сбросить</button>
         </div>
       </form>
-      <section class="sorting-filer">
-        <h2 class="visually-hidden">Список отелей</h2>
+      <section class="sorting-filter">
         <h2 class="hotel-search hotel-search-results">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
@@ -88,7 +87,7 @@
         </div>
       </section>
       <section class="sorting-filter-results">
-        <h2 class="vissualy-hidden">Результаты поиска</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <img class="hotel-card-image-1" src="images/hotel-1.jpg" alt="Отель Амара Резорт и Спа" width="300"
@@ -153,10 +152,12 @@
             </div>
           </li>
         </ul>
-        <button class="search-button-catalog" type="button">Загрузить ещё</button>
+        <div class="download-more-button">
+          <button class="search-button-catalog" type="button">Загрузить ещё</button>
+        </div>
       </section>
-      <div class="pagination">
-        <ul class="pagination">
+      <div class="pagination-container">
+        <ul class="pagination-list">
           <li class="pagination-item"><a class="pagination-link pagination-current">1</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
@@ -164,7 +165,7 @@
           <li class="pagination-item"><a class="pagination-link" href="#">...</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
         </ul>
-        <div>
+        <div class="counter-of-pages">
           <p class="hotel-number-show-page">Гостиниц на странице:</p>
           <select class="select-control" aria-label="Количество отображаемых страниц">
             <option value="four">4</option>
@@ -186,16 +187,16 @@
       </section>
     </main>
     <footer class="footer-contacts">
-      <h2 class="vissualy-hidden">Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item"><a class="footer-button" href="https://twitter.com/htmlacademy_ru">
-            <h2 class="visually-hidden">Twitter</h2>
+
           </a></li>
         <li class="footer-social-item"><a class="footer-button" href="https://www.facebook.com/htmlacademy">
-            <h2 class="visually-hidden">Facebook</h2>
+
           </a></li>
         <li class="footer-social-item"><a class="footer-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <h2 class="visually-hidden">Youtube</h2>
+
           </a></li>
       </ul>
       <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
