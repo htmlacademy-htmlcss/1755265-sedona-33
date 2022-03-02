@@ -51,6 +51,7 @@ body {
   width: 1060px;
 }
 
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -63,7 +64,13 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   list-style: none;
+}
+
+.navigation-item {
+  display: flex;
+  padding-left: 30px;
 }
 
 .navigation-user {
@@ -76,27 +83,40 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-index-background {
+ display: flex;
+ flex-direction: column ;
+ align-items: center;
+}
+
+ul {
+  display: flex;
+
+}
+
+
 .welcome-index-title {
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-index-background::after {
+  content: url("../images/background-cut.svg");
+
 }
 
 .under-background-text {
   text-align: center;
 }
 
+
 .advantages {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   text-align: center;
  }
 
- ul {
-  display: flex;
-  flex-direction:row;
- }
+
 
 
 .advantage-index-title {
@@ -228,18 +248,21 @@ body {
 }
 
 .footer-contacts {
-  margin-top: auto;
+display: flex;
 }
 
 .footer-social-list {
   display: flex;
   flex-direction: row;
   list-style:none;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 .footer-social-item {
+  display: flex;
   padding: 29px;
+  flex-wrap: nowrap;
 }
 
 .footer-phone-number {
