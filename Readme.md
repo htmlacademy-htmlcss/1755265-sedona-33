@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Николай Баишев](https://up.htmlacademy.ru/htmlcss/33/user/1755265).
-* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
