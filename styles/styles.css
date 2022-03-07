@@ -51,6 +51,10 @@ body {
   width: 1060px;
 }
 
+.navigation-list {
+  display: flex;
+
+}
 
 .navigation-link {
   font-family: inherit;
@@ -61,11 +65,13 @@ body {
   background-color:inherit;
   color: inherit;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .navigation-list {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -81,7 +87,7 @@ body {
 .main-index-background {
  background-image: url("../images/index-background.jpg");
  display: flex;
- flex-direction: column ;
+ flex-direction: column;
  align-items: center;
  background-size: 100% auto;
  background-repeat: no-repeat;
@@ -92,13 +98,13 @@ body {
   content: "";
   width: 100%;
   display: block;
-  position: absolute;
   height: 57px;
   background: url("../images/background-cut.svg") bottom center no-repeat;
   background-size: 100% auto;
   position: absolute;
   bottom: 0;
   left: 0;
+
 
 }
 
@@ -115,14 +121,19 @@ body {
 .advantages {
   display: flex;
   flex-wrap: wrap;
+
   list-style: none;
   text-align: center;
-  justify-content: space-around;
+
   width: 1200px;
  }
 
+.advantage-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
+}
 
 .advantage-index-title {
   font-style: normal;
@@ -184,6 +195,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+
 }
 
 .search-title {
