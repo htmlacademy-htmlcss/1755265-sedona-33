@@ -50,12 +50,6 @@ body {
   width: 1060px;
 }
 
-.navigation-list {
-  display: flex;
-
-
-}
-
 .navigation-link {
   font-family: inherit;
   font-size: 20px;
@@ -69,10 +63,20 @@ body {
   position: relative;
 }
 
+.navigation-user:last-child a{
+  font-size: 16px;
+}
+
+
 .navigation-list {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+.navigation-list li {
+  padding-left: 35px;
 }
 
 .navigation-item {
@@ -109,8 +113,10 @@ body {
   text-align: center;
   align-items: center;
   transform: translate(10px, -10px);
-  width: 160px;
+  width: 130px;
   font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
   font-family: inherit;
   font-style: normal;
   text-transform: uppercase;
@@ -165,28 +171,117 @@ body {
 
 .under-background-text {
   text-align: center;
+  padding-top: 30px;
+  padding-left: 230px;
+  padding-right: 230px;
+  line-height: 36px;
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
 
 }
+
+.advantages-container {
+  display: flex;
+  margin: 0 auto;
+
+}
+
 
 .aside-image {
   display: block;
-
 }
 
 .advantages {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
   list-style: none;
   text-align: center;
   width: 1200px;
+  height: auto;
  }
 
 .advantage-row {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+ .tips-item:nth-child(1) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.tips-item:nth-child(2) {
+  background-color: white;
+}
+
+.tips-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+/* Самые последние преимущества в index.html */
+
+.advantage-item:nth-child(3) {
+  width: 33.33%;
+  padding: 30px 30px 30px 30px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item:nth-child(3) .advantage-description {
+  color: black;
+}
+
+.advantage-item:nth-child(3) .advantage-title {
+  color: black;
+}
+
+.advantage-item:nth-child(3) .advantage-number {
+  color: black;
+}
+
+.advantage-item:nth-child(4) {
+  width: 33.33%;
+  padding: 30px 30px 30px 30px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-item:nth-child(4) .advantage-description {
+  color: black;
+}
+
+.advantage-item:nth-child(4) .advantage-title {
+  color: black;
+}
+
+.advantage-item:nth-child(4) .advantage-number {
+  color: black;
+}
+
+.advantage-item:nth-child(5) {
+  width: 33.33%;
+  padding: 30px 30px 30px 30px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item:nth-child(5) .advantage-description {
+  color: black;
+}
+
+.advantage-item:nth-child(5) .advantage-title {
+  color: black;
+}
+
+.advantage-item:nth-child(5) .advantage-number {
+  color: black;
+}
+
+.advantage-content {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 95px 90px 85px 90px;
+  background-color: #83B3D3;
 }
 
 .advantage-index-title {
@@ -200,7 +295,7 @@ body {
 
 .advantage-title {
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
 
 .advantage-number {
@@ -210,7 +305,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color:black;
+  color:white;
 }
 
 .advantage-description {
@@ -219,11 +314,18 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .tips {
   display: flex;
+  padding-bottom: 0;
+}
+
+.tips-item {
+ padding-top: 75px;
+ padding-left: 50px;
+ padding-right: 50px;
 }
 
 .tips-item:nth-child(1)::before {
@@ -302,6 +404,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 1200px;
+  height: 411px;
+  padding: 100px;
 }
 
 .mailing-title {
@@ -323,22 +427,23 @@ body {
 }
 
 .mailing-form {
-  background: #F2F2F2;
+
   border-radius: 0 10px 10px 0;
 }
 
 .mailing-button {
   background: #83B3D3;
   border-radius: 0 10px 10px 0;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+
 }
 
 .footer-contacts {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-social-list {
@@ -488,7 +593,11 @@ body {
 }
 
 .hotel-search {
+  width: 1200px;
+  height: 417px;
   text-align: center;
+  padding: 50px 50px 0 50px;
+  margin-bottom: -90px;
 }
 
 .hotel-search-results {
@@ -587,6 +696,7 @@ flex-direction: row;
 }
 
 .mailing-catalog {
+
   text-align: center;
 }
 
