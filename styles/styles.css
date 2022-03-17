@@ -338,6 +338,7 @@ body {
 
 .tips {
   display: flex;
+  margin-left: -40px;
 }
 
 .tips-item {
