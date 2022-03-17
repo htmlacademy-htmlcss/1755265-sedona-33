@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
  height: 100%;
 }
@@ -65,6 +71,7 @@ body {
 
 .navigation-user:last-child a{
   font-size: 16px;
+
 }
 
 
@@ -82,6 +89,11 @@ body {
 .navigation-item {
   display: flex;
   padding-left: 30px;
+}
+
+.navigation-item:last-child {
+  display: flex;
+  padding-left:20px;
 }
 
 
@@ -172,6 +184,7 @@ body {
 .under-background-text {
   text-align: center;
   padding-top: 30px;
+  margin-bottom:79px;
   padding-left: 230px;
   padding-right: 230px;
   line-height: 36px;
@@ -190,9 +203,11 @@ body {
 
 .aside-image {
   display: block;
+
 }
 
 .advantages {
+  box-sizing: border-box;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -210,21 +225,26 @@ body {
 
  .tips-item:nth-child(1) {
   background: rgba(131, 179, 211, 0.12);
+  margin-left: -40px;
+  padding-right: 90px;
 }
 
 .tips-item:nth-child(2) {
   background-color: white;
+
 }
 
 .tips-item:nth-child(3) {
+  margin-left: -50px;
   background: rgba(131, 179, 211, 0.12);
 }
 
 /* Самые последние преимущества в index.html */
 
 .advantage-item:nth-child(3) {
+
   width: 33.33%;
-  padding: 30px 30px 30px 30px;
+  padding: 80px 80px 80px 80px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -241,8 +261,9 @@ body {
 }
 
 .advantage-item:nth-child(4) {
+
   width: 33.33%;
-  padding: 30px 30px 30px 30px;
+  padding: 80px 80px 80px 80px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -259,8 +280,9 @@ body {
 }
 
 .advantage-item:nth-child(5) {
+
   width: 33.33%;
-  padding: 30px 30px 30px 30px;
+  padding: 80px 80px 80px 80px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -280,7 +302,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  padding: 95px 90px 85px 90px;
+  padding: 95px 95px 74px 95px;
   background-color: #83B3D3;
 }
 
@@ -365,6 +387,9 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+}
+
+.tips-description-3 {
 
 }
 
@@ -444,6 +469,9 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 72px;
+  margin-right: 72px;
 }
 
 .footer-social-list {
