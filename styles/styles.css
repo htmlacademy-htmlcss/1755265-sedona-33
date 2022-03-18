@@ -35,6 +35,7 @@ body {
  line-height: 21px;
  color: black;
  background-color: white;
+ margin: 0;
 }
 
 .page-wrapper {
@@ -62,16 +63,18 @@ body {
   line-height: 26px;
   font-weight: 700;
   font-style: inherit;
-  background-color:inherit;
-  color: inherit;
+  color: black;
   text-decoration: none;
   flex-wrap: wrap;
   position: relative;
+  margin-left: 5px;
+  margin-right: -5px;
+
 }
 
 .navigation-user:last-child a{
   font-size: 16px;
-
+  margin-left: 20px;
 }
 
 
@@ -79,26 +82,26 @@ body {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  margin-left: -20px;
+
 }
 
 .navigation-list li {
-  padding-left: 35px;
+  padding-left: 0;
+  padding-right: 35px;
 }
 
 .navigation-item {
   display: flex;
-  padding-left: 30px;
+
 }
 
 .navigation-item:last-child {
-  display: flex;
-  padding-left:20px;
+  padding-right:33px;
+
 }
 
 
 .navigation-user {
-
   margin-left: auto;
 }
 
@@ -107,33 +110,30 @@ body {
   margin-bottom: -10px;
 }
 
-.navigation-user li:nth-child(1) {
-  background-image: url("/images/search.svg");
-  background-repeat: no-repeat;
-}
+
+/* кнопка Хочу сюда! */
 
 
-.navigation-user li:nth-child(2) {
-  background-image: url("/images/heart.svg");
-  background-repeat: no-repeat;
-}
-
-.navigation-user li:last-child {
+.button-want-here {
   background: #756257;
   border-radius: 4px;
   color: white;
   text-align: center;
   align-items: center;
-  transform: translate(10px, -10px);
   width: 130px;
   font-weight: 400;
-  font-size: 10px;
   line-height: 20px;
   font-family: inherit;
   font-style: normal;
   text-transform: uppercase;
-
+  padding: 5px;
 }
+
+.button-want-here +.navigation-link {
+  font-size: 55px;
+}
+
+/**/
 
  span {
   position: absolute;
@@ -179,6 +179,7 @@ body {
 .welcome-index-title {
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .under-background-text {
@@ -221,18 +222,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
  .tips-item:nth-child(1) {
+  padding-right: 120px;
   background: rgba(131, 179, 211, 0.12);
 }
 
 .tips-item:nth-child(2) {
+  padding-left: 150px;
   background-color: white;
-
 }
 
 .tips-item:nth-child(3) {
+  padding-right: 120px;
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -247,6 +251,8 @@ body {
 
 .advantage-item:nth-child(3) .advantage-description {
   color: black;
+  width: 300px;
+  margin-left:-25px;
 }
 
 .advantage-item:nth-child(3) .advantage-title {
@@ -255,6 +261,7 @@ body {
 
 .advantage-item:nth-child(3) .advantage-number {
   color: black;
+  margin-left: 25px;
 }
 
 .advantage-item:nth-child(4) {
@@ -266,6 +273,8 @@ body {
 
 .advantage-item:nth-child(4) .advantage-description {
   color: black;
+  width: 250px;
+
 }
 
 .advantage-item:nth-child(4) .advantage-title {
@@ -274,10 +283,10 @@ body {
 
 .advantage-item:nth-child(4) .advantage-number {
   color: black;
+  margin-left: 25px;
 }
 
 .advantage-item:nth-child(5) {
-
   width: 33.33%;
   padding: 80px 80px 80px 80px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -285,6 +294,7 @@ body {
 
 .advantage-item:nth-child(5) .advantage-description {
   color: black;
+  width: 255px;
 }
 
 .advantage-item:nth-child(5) .advantage-title {
@@ -293,43 +303,110 @@ body {
 
 .advantage-item:nth-child(5) .advantage-number {
   color: black;
+  margin-left: 25px;
 }
-
-.advantage-content {
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  padding: 95px 95px 74px 95px;
-  background-color: #83B3D3;
-}
-
 .advantage-index-title {
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
+
   font-size: 22px;
   line-height: 36px;
   color: #333333;
   text-align: center;
 }
 
-.advantage-title {
+.advantage-content {
+  text-align: center;
+  padding: 75px 70px 66px 95px;
+  background-color: #83B3D3;
+}
+
+.advantage-title-sedona {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding-right: 25px;
+  text-align: center;
   text-transform: uppercase;
   color: white;
 }
 
-.advantage-number {
+.advantage-title-bridge {
+  font-family: inherit;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  width: 172px;
+  margin-left: 20px;
+}
+
+.advantage-title-square {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 20px;
+}
+
+.advantage-title-road {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  width: 100px;
+  margin-left: 64px;
+  margin-top: 20px;
+}
+
+.advantage-title-tourists {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  width: 100px;
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 120px;
+}
+
+.advantage-number {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
+  padding-top: 5px;
+  padding-right: 26px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color:white;
 }
 
+
 .advantage-description {
   font-style: normal;
-  font-weight: normal;
+  padding-top: 10px;
+  font-weight: 400;
+  margin-right: 10px;
+  padding-right: 10px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -341,46 +418,119 @@ body {
   margin-left: -40px;
 }
 
+
 .tips-item {
- padding-left: 50px;
- padding-right: 50px;
- padding-top: 75px;
+ padding-top: 90px;
  list-style: none;
+ padding-left:30px;
  min-height: 384px;
 }
 
 .tips-item:nth-child(1)::before {
  content: url("/images/home.svg");
+ margin-left: 90px;
  background-repeat: no-repeat;
 }
 
 .tips-item:nth-child(2)::before {
+  margin-right: 150px;
   content: url("/images/hamburger.svg");
   background-repeat: no-repeat;
  }
 
  .tips-item:nth-child(3)::before {
   content: url("/images/gift.svg");
+  margin-left:90px;
   background-repeat: no-repeat;
  }
 
-.tips-title {
+ .tips-description-resident {
+  font-family: inherit;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  margin-top: -5px;
+  padding-left: 50px;
+  width: 230px;
+  margin-left: 30px;
+}
+
+.tips-description-food {
+  margin-left: 10px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+
+}
+
+.tips-description-souvenir {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  margin-top: -5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.tips-title-resident {
+  margin-top: 20px;
+  margin-left: 35px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-left: 80px;
 }
 
-.tips-description {
+.tips-title-food {
+  font-family: inherit;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
-  color: #333333;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 150px;
+  margin-top: 20px;
+
+}
+.tips-title-souvenir {
+  margin-left: 90px;
+  margin-top: 15px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
 }
 
 .search-title {
@@ -394,11 +544,14 @@ body {
 
 .search-description {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  width:750px;
+  margin-left: 180px;
+
 }
 
 .search-button {
@@ -411,6 +564,11 @@ body {
   text-transform: uppercase;
   background: #756257;
   border-radius: 10px;
+  margin-top: 50px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: -5px;
+  padding-bottom: 5px;
 }
 
 .mailing-container {
@@ -420,7 +578,7 @@ body {
   background-size: 100% auto;
   width: 1200px;
   height: 411px;
-  padding: 100px;
+  padding: 110px;
 }
 
 .mailing-title {
@@ -431,6 +589,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  margin-top: -35px;
 }
 
 .mailing-description {
@@ -439,10 +598,13 @@ body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  width: 500px;
+  margin-left: 239px;
+  margin-top: 30px;
 }
 
 .mailing-form {
-
+  margin-top: 65px;
   border-radius: 0 10px 10px 0;
 }
 
@@ -466,6 +628,8 @@ body {
 
 .footer-social-list {
   display: flex;
+  margin-left: -40px;
+  margin-top: -5px;
   flex-direction: row;
   list-style:none;
   justify-content: space-around;
@@ -476,21 +640,26 @@ body {
 
 .footer-social-item {
   display: flex;
-  padding: 29px;
+  padding: 22px;
   flex-wrap: nowrap;
 }
 
 .footer-social-item:nth-child(1) {
   background-image: url("/images/twitter.svg");
   background-repeat: no-repeat;
+  margin-top: -2px;
 }
 
 .footer-social-item:nth-child(2) {
+  margin-left: 2px;
+  margin-top: -3px;
   background-image: url("/images/facebook.svg");
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-child(3) {
+  margin-left: -4px;
+  margin-top: -2px;
   background-image: url("/images/youtube.svg");
   background-repeat: no-repeat;
 }
@@ -504,6 +673,8 @@ body {
  line-height: 40px;
  color: #000000;
  text-decoration: none;
+ margin-right: 15px;
+ margin-top: -16px;
 }
 
 .footer-href-academy {
@@ -611,11 +782,12 @@ body {
 }
 
 .hotel-search {
+  margin-top:10px;
   width: 1200px;
   height: 417px;
   text-align: center;
   padding: 50px 50px 0 50px;
-  margin-bottom: -90px;
+
 }
 
 .hotel-search-results {
@@ -751,4 +923,9 @@ flex-direction: row;
 
 input  {
  font-family: inherit;
+}
+
+/*Логотип Академии*/
+.academy-logotype {
+  margin-top: -15px;
 }
