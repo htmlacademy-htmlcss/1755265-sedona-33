@@ -11,25 +11,50 @@
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
+        <a class="navigation-logo" href="#"
+          ><img
+            src="images/logo-sedona.svg"
+            alt="Логотип Седоны"
+            width="139"
+            height="70"
+        /></a>
 
-        <a class="navigation-logo" href="#"><img src="images/logo-sedona.svg" alt="Логотип Седоны" width="139"
-            height="70"></a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link navigation-link-current">Гостиницы</a>
+          <li class="navigation-item">
+            <a class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a class="navigation-link" href="#">
-              <h2 class="visually-hidden">Поиск</h2>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
+              <img
+                src="images/search.svg"
+                alt="иконка Поиск"
+                width="18"
+                height="18"
+              />
             </a>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="#"><span>12</span>
-              <h2 class="visually-hidden">Избранное</h2>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#"
+              ><span>12</span>
+              <img
+                src="images/heart.svg"
+                alt="иконка Избранное"
+                height="17"
+                width="18"
+              />
             </a>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="#">Хочу сюда!</a></li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-button" href="#">Хочу сюда!</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -44,23 +69,17 @@
         <fieldset class="hotel-filter-group">
           <legend class="hotel-filter-title">Инфаструктура:</legend>
           <ul class="hotel-filter-list">
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="checkbox"
-                  name="swimming-pool" checked>Бассейн</label></li>
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="checkbox"
-                  name="parking" checked>Парковка</label></li>
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="checkbox"
-                  name="wi-fi">Wi-Fi</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="swimming-pool" checked><label class="control">Бассейн</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="parking" checked><label class="control">Парковка</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="wi-fi"><label class="control">Wi-Fi</label></li>
           </ul>
         </fieldset>
         <fieldset class="hotel-filter-group">
           <legend class="hotel-filter-title">Тип жилья:</legend>
           <ul class="hotel-filter-list">
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="radio"
-                  name="hotel-group" value="hotel" checked>Гостиница</label></li>
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="radio"
-                  name="hotel-group" value="motel">Мотель</label></li>
-            <li class="hotel-filter-item"><label class="control"><input class="control-input" type="radio"
-                  name="hotel-group" value="apartments">Апартаменты</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="radio" name="hotel-group" value="hotel" checked><label class="control">Гостиница</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="radio" name="hotel-group" value="motel"><label class="control">Мотель</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="radio" name="hotel-group" value="apartments"><label class="control">Апартаменты</label></li>
           </ul>
           <div class="hotel-filter-price">Стоимость, ₽:</div>
           <h2 class="visually-hidden">Ползунок регулирования цены</h2>
