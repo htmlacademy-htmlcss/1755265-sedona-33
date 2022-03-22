@@ -62,14 +62,14 @@
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a class="little-house-icon" href="/index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a class="little-house-icon" href="../index.html"></a></li>
           <li class="breadcrumbs-item"><span class="hotels-little-text">Гостиницы</span></li>
         </ul>
       <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="hotel-filter-group">
           <legend class="hotel-filter-title">Инфаструктура:</legend>
           <ul class="hotel-filter-list">
-            <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="swimming-pool" checked><label class="control">Бассейн</label></li>
+            <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked><label class="control" for="swimming-pool">Бассейн</label></li>
             <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="parking" checked><label class="control">Парковка</label></li>
             <li class="hotel-filter-item"><input class="control-input" type="checkbox" name="wi-fi"><label class="control">Wi-Fi</label></li>
           </ul>
@@ -81,9 +81,12 @@
             <li class="hotel-filter-item"><input class="control-input" type="radio" name="hotel-group" value="motel"><label class="control">Мотель</label></li>
             <li class="hotel-filter-item"><input class="control-input" type="radio" name="hotel-group" value="apartments"><label class="control">Апартаменты</label></li>
           </ul>
-          <div class="hotel-filter-price">Стоимость, ₽:</div>
-          <h2 class="visually-hidden">Ползунок регулирования цены</h2>
+
         </fieldset>
+        <div class="hotel-filter-price">
+        <div class="hotel-price-title">Стоимость, ₽:</div>
+        <h2 class="visually-hidden">Ползунок регулирования цены</h2>
+        </div>
         <div class="button-apply-reset">
           <button class="button-apply" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>

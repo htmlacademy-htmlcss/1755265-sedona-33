@@ -602,19 +602,18 @@ body {
 /* Catalog */
 
 .inner-header {
-  padding-top: 5px;
-  padding-bottom: 120px;
-  position: absolute;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
-  padding-right: 635px;
+  padding-right: 71px;
+  padding-left: 71px;
+  padding-top: 35px;
+  padding-bottom: 86px;
+
 }
 
 .inner-header-title {
-  margin-top: 30px;
-  margin-left: 70px;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -624,9 +623,6 @@ body {
 
 .breadcrumbs {
   display: flex;
-  position: absolute;
-  margin-left: 17px;
-  margin-top: -49px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -635,6 +631,18 @@ body {
   list-style: none;
   color: white;
 }
+
+.little-house-icon {
+  background-image: url("../images/home-bread.svg");
+  background-repeat: no-repeat;
+}
+
+
+.little-house-icon::after {
+  background-image: url("../images/arrow-bread.svg");
+  background-repeat: no-repeat;
+}
+
 
 .sorting-filter {
   display: flex;
@@ -704,23 +712,15 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-family: inherit;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  position: absolute;
-  margin-left: 555px;
-  margin-top: 77px;
   padding: 13px 34px;
 
 }
  .button-reset {
-   margin-left: 595px;
-   margin-top: 145px;
-   position: absolute;
-   border: 0;
    font-family: inherit;
    background-color: transparent;
    font-style: normal;
@@ -737,9 +737,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  position: absolute;
-  margin-top: -163px;
-  margin-left: 310px;
   color: white;
 }
 
@@ -752,7 +749,7 @@ body {
 }
 
 .hotel-search {
-  margin-top: 10px;
+  margin:0;
   width: 1200px;
   height: 417px;
   text-align: center;
@@ -760,6 +757,7 @@ body {
 }
 
 .hotel-search-results {
+  margin: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
