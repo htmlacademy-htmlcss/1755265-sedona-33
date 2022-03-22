@@ -620,6 +620,7 @@ body {
   line-height: 78px;
   color: #ffffff;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .breadcrumbs {
@@ -630,6 +631,7 @@ body {
   line-height: 21px;
   list-style: none;
   color: white;
+
 }
 
 .little-house-icon {
@@ -650,6 +652,7 @@ body {
 
 .hotel-price-title {
   margin-left: 34px;
+
 
 }
 
@@ -714,6 +717,8 @@ body {
 
 
 .button-apply {
+  margin-top:40px;
+  margin-left: 290px;
   background: #83b3d3;
   border-radius: 4px;
   font-style: normal;
@@ -726,10 +731,12 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 13px 34px;
+  padding: 14px 32px;
 
 }
  .button-reset {
+   margin-left: 325px;
+   margin-top: 15px;
    font-family: inherit;
    background-color: transparent;
    font-style: normal;
@@ -741,6 +748,7 @@ body {
 }
 
 .hotel-filter-price {
+  margin-left:35px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
