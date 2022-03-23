@@ -697,6 +697,7 @@ body {
 
 .hotel-filter {
   display: flex;
+
 }
 
 .hotel-filter-list {
@@ -801,6 +802,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 14px 32px;
+  border: none;
 
 }
  .button-reset {
@@ -812,16 +814,22 @@ body {
    line-height: 23px;
    text-align: center;
    color: #ffffff;
+   border: none;
 }
 
 .hotel-filter-price {
-  margin-left:35px;
+  margin-left: 110px;
+  margin-top: 45px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: white;
+}
+
+.hotel-price-title {
+  padding-bottom: 30px;
 }
 
 .control {
@@ -1003,12 +1011,15 @@ input {
   padding: 30px
 }
 
+
 .catalog-filter-label {
   display: flex;
 }
 
 .range-wrapper-inputs {
+  margin-top: 1px;
   display: flex;
+  padding: 1px 4px 1px 1px;
 }
 
 .range-input {
@@ -1018,6 +1029,10 @@ input {
   color: #ffffff;
   background-color: transparent;
   font: inherit;
+  font-size:18px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .range-input:hover {
@@ -1047,7 +1062,7 @@ input {
 .input-price-from {
   display: block;
   margin-left: -31px;
-  padding: 13px 14px 13px 0;
+  padding: 13px 12px 14px 0;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1078,21 +1093,23 @@ input {
 
 /* Ползунок регулирования цены */
 .wrapper {
-  padding: 30px;
+  padding: 30px 0;
   background-color: transparent;
 }
 
 .range {
+
 	position: relative;
 }
 
 .range__bar {
-	height: 2px;
-	background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -4px;
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range__bar-inner {
-	width: 287px;
+	width: 227px;
 	height: 100%;
 	background-color: #ffffff;
   position: absolute;
@@ -1114,7 +1131,6 @@ input {
 	border-radius: 30%;
 	background-color: #ffffff;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-
   transition: all 0.25s ease;
 }
 
@@ -1134,7 +1150,7 @@ input {
 }
 
 .range__button--right{
-	left: 207px;
+	left: 217px;
 }
 
 /* Ползунок регулирования цены */
