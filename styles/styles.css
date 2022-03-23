@@ -632,6 +632,8 @@ body {
   line-height: 21px;
   list-style: none;
   color: white;
+  margin: -7px 0 0 0;
+  padding: 0 0 0 2px;
 }
 
 .breadcrumbs-item {
@@ -639,36 +641,34 @@ body {
 
 }
 
-
-
 .little-house-icon {
   display: flex;
-  width: 12px;
   height: 12px;
   background-image: url("../images/home-bread.svg");
   background-repeat: no-repeat;
+  align-items: center;
 }
 
 
 .little-house-icon::after {
   display: block;
-
-  content: url("../images/arrow-bread.svg");
+  content: "";
+  margin-left: 25px;
+  margin-right: 5px;
+  background: url("../images/arrow-bread.svg");
   width: 5px;
   height: 8px;
 
 }
 
-.button-apply-reset {
-  margin-left:20px;
-
+.hotels-little-text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
-.hotel-price-title {
-  margin-left: 34px;
-
-
-}
 
 .sorting-filter {
   display: flex;
@@ -693,33 +693,90 @@ body {
   object-fit: contain;
 }
 
+/* Чекбоксы и радиокнопки */
 
 .hotel-filter {
   display: flex;
 }
 
 .hotel-filter-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .hotel-filter-item {
-  margin:11px 0;
-}
 
+  margin:16px 0;
+}
 
 .control-input + label {
+  position: relative;
+  padding-left: 39px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
 
-  padding-left:19px;
 }
 
-.control-input + label::after {
+.control-input + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
 
 }
+
+.control-input:checked + label::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+}
+
+
+.control-input-checkbox + label {
+  position: relative;
+  padding-left: 39px;
+  color: #ffffff;
+}
+
+.control-input-checkbox + label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.control-input-checkbox:checked + label:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 10px;
+  background-image: url("../images/swoosh.svg");
+  background-repeat: no-repeat;
+  left: 4px;
+  top: 5px;
+}
+
+/* Чекбоксы и радиокнопки */
 
 .hotel-filter-title {
-
   margin-left:5px;
   font-family: inherit;
   font-style: normal;
@@ -731,8 +788,6 @@ body {
 
 
 .button-apply {
-  margin-top:40px;
-  margin-left: 290px;
   background: #83b3d3;
   border-radius: 4px;
   font-style: normal;
@@ -749,8 +804,6 @@ body {
 
 }
  .button-reset {
-   margin-left: 325px;
-   margin-top: 15px;
    font-family: inherit;
    background-color: transparent;
    font-style: normal;
@@ -925,21 +978,166 @@ input {
   width: 20px;
   height: 20px;
   color: white;
+}
 
+.control-input:checked {
+  content: "";
+
+  background-color: #ffffff;
+
+  background-color: transparent;
 }
 
 .hotel-filter-group {
   border: 0;
-  padding-left: 0;
-  padding-right: 68px;
+  width: 217px;
+  margin: 0;
+  padding: 0;
 }
 
-.hotel-filter-group:nth-child(2) {
-  border: 0;
-  padding-left: 0;
-  padding-right: 167px;
+/* инпуты для интервала стоимости */
+
+.example-wrapper {
+
+  background-color: transparent;
+  padding: 30px
 }
 
+.catalog-filter-label {
+  display: flex;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-input {
+  margin: 0;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: transparent;
+  font: inherit;
+}
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  outline: 3px solid #81b3d2;
+  box-shadow: inset 0 0 0 3px #81b3d2;
+  border: 2px solid #ffffff;
+}
+
+.range-input:active {
+  background-color: #756257;
+  border: 2px solid #ffffff;
+  outline: none;
+  box-shadow: none;
+}
+
+.input-min-price {
+  border-radius: 4px 0 0 4px;
+  padding: 14px 0 10px 17px;
+  border-right: 1px solid #ffffff;
+  width: 143px;
+}
+
+.input-price-from {
+  display: block;
+  margin-left: -31px;
+  padding: 13px 14px 13px 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.input-price-before {
+  display: block;
+  margin-left: -37px;
+  padding: 13px 19px 13px 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.input-max-price {
+  border-radius: 0 4px 4px 0;
+  padding: 14px 0 10px 16px;
+  border-left: 1px solid #ffffff;
+  width: 144px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+/* инпуты для интервала стоимости */
+
+
+
+/* Ползунок регулирования цены */
+.wrapper {
+  padding: 30px;
+  background-color: transparent;
+}
+
+.range {
+	position: relative;
+}
+
+.range__bar {
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.range__bar-inner {
+	width: 287px;
+	height: 100%;
+	background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  }
+
+.range__button {
+	position: absolute;
+	top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: -10px;
+	height: 20px;
+	width: 20px;
+  border: none;
+	border-radius: 30%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
+  transition: all 0.25s ease;
+}
+
+.range__button:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: #ffffff;
+  opacity: 0.33;
+
+}
+
+.range__button:hover {
+  cursor: pointer;
+	transform: scale(1.1);
+}
+
+.range__button--right{
+	left: 207px;
+}
+
+/* Ползунок регулирования цены */
 
 
 
