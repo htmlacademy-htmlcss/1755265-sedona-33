@@ -619,11 +619,12 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .breadcrumbs {
+  display: flex;
+  align-items: center;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -631,18 +632,31 @@ body {
   line-height: 21px;
   list-style: none;
   color: white;
+}
+
+.breadcrumbs-item {
+  padding-right: 5px;
 
 }
 
+
+
 .little-house-icon {
+  display: flex;
+  width: 12px;
+  height: 12px;
   background-image: url("../images/home-bread.svg");
   background-repeat: no-repeat;
 }
 
 
 .little-house-icon::after {
-  background-image: url("../images/arrow-bread.svg");
-  background-repeat: no-repeat;
+  display: block;
+
+  content: url("../images/arrow-bread.svg");
+  width: 5px;
+  height: 8px;
+
 }
 
 .button-apply-reset {
@@ -696,12 +710,12 @@ body {
 
 
 .control-input + label {
-  position: absolute;
+
   padding-left:19px;
 }
 
 .control-input + label::after {
-  position: absolute;
+
 }
 
 .hotel-filter-title {
