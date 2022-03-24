@@ -556,6 +556,14 @@ body {
   margin-right: 72px;
 }
 
+.footer-contacts-catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
 .footer-social-list {
   display: flex;
   margin-left: -40px;
@@ -683,20 +691,27 @@ body {
 
 .sorting-filter {
   display: flex;
+  margin-left: 70px;
+  margin-top: 24px;
   align-items: center;
+
 }
 
 .hotel-card-list {
   display: grid;
   list-style: none;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 38px;
+  column-gap: 18px;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-card-item {
   display: grid;
   grid-template-rows: 206px repeat(4, auto);
   row-gap: 16px;
+  width: 340px;
+  padding: 20px;
 }
 
 .hotel-card-image {
@@ -870,12 +885,12 @@ body {
 }
 
 .select-control {
-
+  -webkit-appearance: none;
+  appearance: none;
   padding: 7px 94px 10px 19px;
   width: 287px;
   height: 48px;
-  left: 640px;
-  top: 517px;
+  margin-left: 190px;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -885,7 +900,31 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  background-image: url("../images/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
 
+.select-control-downer {
+  margin-top: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 4px 118px 7px 18px;
+  width: 185px;
+  height: 48px;
+  margin-left: 414px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 81px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  background-image: url("../images/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 
@@ -907,7 +946,7 @@ body {
 .display-mode-catalog-1 {
   margin-right: 8px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 14px;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -915,7 +954,7 @@ body {
 
 .display-mode-catalog-2 {
   margin-right: 8px;
-  padding: 10px;
+  padding: 14px;
   border: 2px solid #E6E6E6;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -925,7 +964,7 @@ body {
 
 .display-mode-catalog-3 {
   margin-right: 72px;
-  padding: 10px;
+  padding: 14px;
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
   box-sizing: border-box;
@@ -934,7 +973,9 @@ body {
 }
 
 .sorting-filter-results {
-  padding: 20px;
+  margin-top: 30px;
+  padding-left: 72px;
+  padding-right: 72px;
 
 }
 
@@ -949,6 +990,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+
 }
 
 .hotel-rating {
@@ -968,13 +1010,21 @@ body {
   text-transform: uppercase;
   color: #333333;
   padding: 9px 0 10px 0;
+  margin-left: auto;
+  width: 161px;
+}
+
+.hotel-card-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-card-button-left {
   background: #756257;
   border-radius: 4px;
   color: #ffffff;
-  padding: 9px 0 10px 0;
+  padding: 9px 5px 6px 5px;
+  width: 134px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -985,8 +1035,9 @@ body {
   border: none;
 }
 
+
 .hotel-card-title {
-  margin: 16px 0;
+  margin: 1px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -999,7 +1050,7 @@ body {
 }
 
 .hotel-card-button-right {
-  width: 133px;
+  width: 140px;
   height: 37px;
   border-radius: 4px;
   background: #83B3D3;
@@ -1016,10 +1067,11 @@ body {
 }
 
 .download-more-button {
-  padding: 30px 290px 30px 290px;
+  padding: 30px 219px 30px 219px;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
   text-align: center;
+  margin-top: 35px;
 }
 
 .hotel-card-button-right-selected {
@@ -1066,7 +1118,12 @@ body {
 .pagination-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-top: 23px;
+  margin-left: 38px;
+}
+
+.hotel-number-show-page {
+
 }
 
 .pagination-list {
@@ -1075,8 +1132,12 @@ body {
   flex-direction: row;
 }
 
+.pagination-item {
+  margin-right: 8px;
+}
+
 .pagination-link {
-  padding: 10px;
+  padding: 11px 16px 18px 27px;
   background: #83b3d3;
   border-radius: 4px;
   text-decoration: none;
@@ -1092,7 +1153,7 @@ body {
 }
 
 .pagination-current {
-  padding: 10px;
+  padding: 14px 16px 16px 16px;
   background: #f2f2f2;
   border-radius: 4px;
   font-style: normal;
@@ -1110,7 +1171,7 @@ body {
   text-align: center;
   width: 1200px;
   height: 411px;
-  padding: 110px;
+  padding: 29px 112px 109px 112px;
 }
 
 .mailing-title-catalog {
@@ -1121,6 +1182,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 49px;
 }
 
 .mailing-description-catalog {
