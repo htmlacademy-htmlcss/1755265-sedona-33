@@ -902,7 +902,7 @@ body {
   line-height: 23px;
   background-image: url("../images/dropdown.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 15px center;
 }
 
 .select-control-downer {
@@ -924,7 +924,7 @@ body {
   line-height: 23px;
   background-image: url("../images/dropdown.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position:right 21px center;
 }
 
 
@@ -992,6 +992,11 @@ body {
   line-height: 23px;
 
 }
+
+.hotel-rating img ~ img{
+  margin-left: 7px;
+}
+
 
 .hotel-rating {
   display: flex;
@@ -1098,6 +1103,12 @@ body {
   line-height: 23px;
 }
 
+.hotel-card-line {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+
 .search-button-catalog {
   background: #83b3d3;
   border-radius: 4px;
@@ -1122,22 +1133,20 @@ body {
   margin-left: 38px;
 }
 
-.hotel-number-show-page {
-
-}
-
 .pagination-list {
   display: flex;
   list-style: none;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
   margin-right: 8px;
+
 }
 
 .pagination-link {
-  padding: 11px 16px 18px 27px;
   background: #83b3d3;
   border-radius: 4px;
   text-decoration: none;
@@ -1153,7 +1162,7 @@ body {
 }
 
 .pagination-current {
-  padding: 14px 16px 16px 16px;
+
   background: #f2f2f2;
   border-radius: 4px;
   font-style: normal;
@@ -1203,6 +1212,59 @@ body {
   width: 1px;
   overflow: hidden;
 }
+
+/*Модальное окно*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 53px;
+  height: 53px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.modal-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color:#000000;
+}
+
+/*Модальное окно*/
 
 /*Интерактивные элементы*/
 
